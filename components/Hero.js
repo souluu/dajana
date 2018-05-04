@@ -1,6 +1,6 @@
 const Hero = props =>
 <div>
-    Hero box  anna
+    Hero box
 </div>
 
 export default Hero
