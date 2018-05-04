@@ -1,4 +1,4 @@
-import SiteFurniture from '../infrastructure/SiteFurniture';
+import SiteFurniture from '../sitefurniture';
 
 export default () => (
     <SiteFurniture>
