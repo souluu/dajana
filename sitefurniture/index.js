@@ -6,9 +6,11 @@ export default ({ children }) => {
         padding: 20,
         border: '1px solid #DDD'
     }
-    return (<div style={layoutStyle}>
-        <Header />
-        { children }
-    </div>)
+    return (
+        <div style={layoutStyle}>
+            <Header />
+            { children }
+        </div>
+    )
 }
     
