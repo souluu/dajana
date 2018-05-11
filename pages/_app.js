@@ -2,7 +2,7 @@ import App, { Container } from 'next/app';
 import React from 'react';
 import SiteFurniture from '../sitefurniture';
 
-export default class Main extends App {
+export default class MyApp extends App {
     render() {
         const { Component, pageProps } = this.props;
         return <Container>
