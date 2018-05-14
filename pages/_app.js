@@ -5,11 +5,15 @@ import SiteFurniture from '../sitefurniture';
 export default class MyApp extends App {
     render() {
         const { Component, pageProps } = this.props;
-        return <Container>
-            <SiteFurniture>
-                <Component {...pageProps} />
-            </SiteFurniture>
-        </Container>
+        return (
+                <Container>
+                    <SiteFurniture>
+                        <Component {...pageProps} />
+                    </SiteFurniture>
+                </Container>
+        )
     }
 }
+
+
 
