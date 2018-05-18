@@ -1,15 +1,21 @@
 import App, { Container } from 'next/app';
 import React from 'react';
 import SiteFurniture from '../sitefurniture';
+import withReduxStore from '../lib/with-redux-store';
+import { Provider } from 'react-redux';
 
-export default class MyApp extends App {
+class MyApp extends App {
     render() {
-        const { Component, pageProps } = this.props;
+        const { Component, pageProps, reduxStore } = this.props;
         return <Container>
-            <SiteFurniture>
-                <Component {...pageProps} />
-            </SiteFurniture>
+            <Provider store={reduxStore}>
+                <SiteFurniture>
+                    <Component {...pageProps} />
+                </SiteFurniture>
+            </Provider>
         </Container>
     }
 }
+
+export default withReduxStore(MyApp);
 
