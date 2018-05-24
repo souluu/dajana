@@ -9,6 +9,7 @@ class home extends React.Component {
   }
 }
 
+
 const mapStateToProps = (state) => {
     return { 
       title: state.homepage.title 
